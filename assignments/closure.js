@@ -1,7 +1,22 @@
 // ==== Challenge 1: Write your own closure ====
 // Write a simple closure of your own creation.  Keep it simple!
+function cordonbleu(){
+  let taste = "yummy!";
+  console.log(`Cordon bleu is teh ${taste}`);
 
-
+  function chicken(){
+    const cluck = "chicken";
+    console.log(`The ${cluck} is teh ${taste}`);
+    
+    function ham() {
+      const pork = "ham";
+      console.log(`Teh ${pork} is not as ${taste} as the ${cluck}`);
+    }
+    ham()
+  }
+  chicken()
+}
+cordonbleu()
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 
 
